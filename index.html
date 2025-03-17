@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Personal Page</title>
+    <style>
+        body {
+            background-color: #e6f7ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        button {
+            background-color: #0099ff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+    <h1>ALISHA</h1>
     
+    <img src="image.jpg" alt="My Photo" width="200">
+    
+    <p>Hello i am Alisha. I am from Nepal. I am 21 years old. Some of my hobbies are travelling, cooking, sleeping, dancing, singing etc. Currently am studying in Ulsan college in IT department. My aim is to earn money and travel the world. </p>
+    
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="resetColor()">Reset Color</button>
+    
+    <script>
+        function changeColor() {
+            const colors = ["lightblue", "lightgreen", "lightpink", "lavender"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+        
+        function resetColor() {
+            document.body.style.backgroundColor = "#e6f7ff";
+        }
+    </script>
 </body>
 </html>
